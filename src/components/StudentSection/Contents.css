@@ -1,0 +1,225 @@
+
+
+
+
+
+/* Styles for desktop screens */
+/*.contentstable {
+  border: 1px solid black;
+  margin: 0 auto;
+  font-size: 14px;
+  width: 90%;
+}
+
+.contentstable td {
+  padding: 5px;
+}
+
+.contentheading {
+  background-color: grey;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+ 
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .contentstable {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .subheadings td {
+    display: block;
+    padding: 10px;
+  }
+
+  .subheadings td {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .subheadings td {
+    margin-top: 20px;
+  }
+
+  
+}*/
+
+
+
+
+
+
+
+
+
+/*.contentstable {
+  border: 1px solid black;
+  margin: 0 auto;
+  font-size: 14px;
+  width: 90%;
+}
+
+.contentstable td {
+  padding: 5px;
+}
+
+.contentheading {
+  background-color: grey;
+  width:38%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contentstable {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    border-collapse: collapse;
+  }
+
+  .contentstable td {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: none;
+  }
+
+  .contentstable td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  .subheadings td {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .subheadings td:first-child {
+    margin-top: 20px;
+  }
+
+  .contentheading {
+    font-size: 20px;
+  }
+}*/
+
+
+
+.table
+{
+  background-color: white;
+  width:250%;
+  height: 100%;
+  
+}
+
+.en-content-container {
+  
+   
+  align-items:center;
+  height: 100vh;
+  margin-left: 290px;
+ 
+}
+
+
+.table-row {
+  height: 50px; /* Change this value to whatever height you want */
+  background-color: lightgray;
+ position:initial;
+}
+
+
+
+.tr1{
+
+  transition: background-color 0.3s ease;
+  height: 60px;
+}
+
+#t1
+{
+  width: 800px;
+  height: 500px;
+}
+
+td{
+  vertical-align: top;
+
+}
+#contents-h4
+{
+  margin-left: 20px;
+}
+#contents-h5{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.courses
+{
+    
+    border: 'none';
+    color: black;
+    font-family:"Lato";
+   background-color: lightgray;
+   
+   
+}
+.t1
+{
+  vertical-align: right;
+}
+
+
+
+.tr:hover {
+  
+  background-color: #f5f5f5; /* Add any background color you want */
+}
+
+
+
+

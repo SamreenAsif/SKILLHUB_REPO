@@ -1,0 +1,79 @@
+.Aboutpage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.about-left {
+  min-width: 1px;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  width: 80%;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.08),
+    0 4px 12px 4px rgba(0, 0, 0, 0.16);
+  margin-top: 90px;
+  position: absolute;
+  right: 40px;
+}
+
+.courseheading {
+  display: flex;
+
+  margin-left: 60px;
+  font-size: 29px;
+}
+
+.courseline {
+  margin-left: 60px;
+}
+
+.learn {
+  font-size: 20px;
+  margin-left: 60px;
+}
+.Header_course {
+  background-color: #27599b;
+  width: 1680px;
+  height: 70px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+button {
+  background-color: #6ad04d;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+}
+.Help {
+  position: fixed;
+  bottom: 3px;
+  right: 8px;
+  width: 150px;
+  height: 60px;
+  background-color: purple;
+  border-radius: 50% / 110%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#about-img{
+  border-radius: 100%;
+}
+
+.settings {
+  cursor: pointer;
+  margin-right: 40px;
+}

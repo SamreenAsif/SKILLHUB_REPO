@@ -1,0 +1,42 @@
+#popular-heading {
+  font-size: 2.5rem;
+  /* padding: 29px; */
+  margin: 3;
+  margin-left: 2%;
+  margin-top: 3%;
+  font-weight: bold;
+}
+
+/* PopularCourses.css */
+.slick-prev,
+.slick-next {
+  color: black;
+  font-size: 24px;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  overflow: visible !important;
+  padding: 25px !important;
+  /* border: 1px solid olive; */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 100px;
+  line-height: 1;
+  color: black;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
