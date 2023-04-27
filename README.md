@@ -1,0 +1,2 @@
+# SKILLHUB_REPO
+Welcome to SkillHub, an educative platform that provides you with a wide range of courses taught by multiple instructors. Here at SkillHub, we believe in providing our users with the opportunity to learn whatever they want, whenever they want. Our platform allows instructors to post both paid and free courses, providing users with a variety of options to choose from. With our easy-to-use interface, you can browse through our collection of courses, enroll in free courses or purchase paid courses, and start learning today.
