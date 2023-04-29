@@ -8,6 +8,7 @@ const TopCategoriesContainer = styled.div`
   line-height: 1.4;
   font-size: 1.6rem;
   color: #1c1d1f;
+  margin-bottom:3%;
   
 `
 const TopCategoriesSection = styled.section`
@@ -15,15 +16,15 @@ const TopCategoriesSection = styled.section`
   margin-right: auto;
   margin-left: auto;
   padding: 0 2.4rem;
+
  
 `
 const TopCategoriesSectionTitle = styled.h2`
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02rem;
-  margin-top: 0;
-  margin-bottom: 2.4rem;
+font-size: 2.5rem;
+font-weight: bold;
+line-height: 1.2;
+margin-top: 0px;
+margin-bottom: 2.4rem;
 `
 const TopCategoriesContain = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ const TopCategoriesCard = styled.a`
   margin: 0 1.6rem 1.6rem 0;
   max-width: calc(100%/4 - 1.6rem);
   cursor: pointer;
+  text-decoration:none;
 `
 const CategoryCardImgWrapper = styled.div`
   overflow: hidden;
@@ -43,7 +45,7 @@ const CategoryCardImg = styled.img`
   display: block;
   object-fit: contain;
   transition: transform 100ms cubic-bezier(0.2, 0.0, 1.0, 0.9);
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 
   &:hover {
@@ -57,8 +59,9 @@ const CategoryCardTitle = styled.div`
 const CategoryCardTitleSapn = styled.span`
   font-weight: 700;
   line-height: 1.2;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: -0.02rem;
+  text-decoration:none;
 `
 
 const TopCategories = () => {
@@ -69,7 +72,8 @@ const TopCategories = () => {
           <TopCategoriesContain>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-design-2x-v2.jpeg" />
+              <CategoryCardImg src="/images/top-categories/graphic1.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-design-2x-v2.jpeg" /> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>Design</CategoryCardTitleSapn>
@@ -77,7 +81,8 @@ const TopCategories = () => {
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-development-2x-v2.jpeg" />
+              <CategoryCardImg src="/images/top-categories/coding3.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-development-2x-v2.jpeg" /> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>Development</CategoryCardTitleSapn>
@@ -85,7 +90,8 @@ const TopCategories = () => {
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-marketing-2x-v2.jpeg" />
+              <CategoryCardImg src="/images/top-categories/marketing3.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-marketing-2x-v2.jpeg" /> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>Marketing</CategoryCardTitleSapn>
@@ -93,7 +99,8 @@ const TopCategories = () => {
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-it-and-software-2x-v2.jpeg"/>
+              <CategoryCardImg src="/images/top-categories/IT1.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-it-and-software-2x-v2.jpeg"/> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>IT and Software</CategoryCardTitleSapn>
@@ -101,15 +108,16 @@ const TopCategories = () => {
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-personal-development-2x-v2.jpeg" />
+                <CategoryCardImg src="/images/top-categories/fitness1.png" />
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
-                <CategoryCardTitleSapn>Personal Development</CategoryCardTitleSapn>
+                <CategoryCardTitleSapn>Health and Fitness</CategoryCardTitleSapn>
               </CategoryCardTitle>
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-business-2x-v2.jpeg" />
+              <CategoryCardImg src="/images/top-categories/business3.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-business-2x-v2.jpeg" /> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>Business</CategoryCardTitleSapn>
@@ -117,15 +125,16 @@ const TopCategories = () => {
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-photography-2x-v2.jpeg" />
+                <CategoryCardImg src="/images/top-categories/cooking4.png" />
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
-                <CategoryCardTitleSapn>Photography</CategoryCardTitleSapn>
+                <CategoryCardTitleSapn>Cooking</CategoryCardTitleSapn>
               </CategoryCardTitle>
             </TopCategoriesCard>
             <TopCategoriesCard>
               <CategoryCardImgWrapper>
-                <CategoryCardImg src="/images/top-categories/lohp-category-music-2x-v2.jpeg" />
+              <CategoryCardImg src="/images/top-categories/music3.png" />
+                {/* <CategoryCardImg src="/images/top-categories/lohp-category-music-2x-v2.jpeg" /> */}
               </CategoryCardImgWrapper>
               <CategoryCardTitle>
                 <CategoryCardTitleSapn>Music</CategoryCardTitleSapn>
