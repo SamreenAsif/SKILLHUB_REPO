@@ -38,17 +38,7 @@ const Navigation = (props) => {
     navigate("./Learning");
   }
 
-  const RightTooltipWithStyle = styled(({ className, ...props }) => (
-    <Tooltip {...props} classes={{ popper: className }} />
-  ))(({ theme }) => ({
-    [`& .${tooltipClasses.tooltip}`]: {
-      backgroundColor: "transparent",
-      // minWidth: 250,
-      color: theme.palette.grey[900],
-      borderRadius: 0,
-      padding: 0,
-    },
-  }));
+  
   const LeftTooltipWithStyle = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
   ))(({ theme }) => ({
@@ -62,24 +52,27 @@ const Navigation = (props) => {
   }));
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 , gap:"1%"}} >
       <AppBar
         position="static"
         sx={{
           bgcolor: "#27599b",
-
-          height: "7.2rem",
+          
+          height: "10rem",
           px: "2.4rem",
           boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
         }}
+
+        
       >
-        <Toolbar disableGutters sx={{ my: "auto", gap: 1 }}>
+      <Toolbar disableGutters sx={{ my: "auto", gap: "1.5%" }}>
           <Box>
             <img
-              src="/images/header/skillhubLogo.png"
+            src="/images/header/skillhubLogo2.jpeg"
+              // src="/images/header/skillhubLogo.png"
               alt="Udemy"
-              width="87"
-              height="50"
+              width="120"
+              height= "150"
             />
           </Box>
           <MenuButtom>
@@ -87,7 +80,7 @@ const Navigation = (props) => {
               title={<Categories />}
               placement="bottom-start"
             >
-              <span style={{ color: "white" }}>Categories</span>
+              <span style={{ color: "white" , "font-size":"18px"}}>Categories</span>
             </LeftTooltipWithStyle>
           </MenuButtom>
 
