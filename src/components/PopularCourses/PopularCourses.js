@@ -9,17 +9,18 @@ import courses from "../../data/coursesData";
 import SearchResult from "../SearchCourse/SearchResults/SearchResult";
 
 const PopularCourses = (props) => {
-  const popularCourses = courses.sort((a, b) => b.rating - a.rating).slice(0, 4);
+  const popularCourses = courses.sort((a, b) => b.rating - a.rating).slice(0, 6);
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     arrows: true,
-    prevArrow: <div className="slick-prev"></div>,
-    nextArrow: <div className="slick-next"></div>,
+    prevArrow: <div className="slick-prev"> </div>,
+    nextArrow: <div className="slick-next">  </div>,
+    initialSlide: 0 
   };
 
   return (

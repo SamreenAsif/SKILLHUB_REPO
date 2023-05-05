@@ -68,11 +68,11 @@ const Navigation = (props) => {
       <Toolbar disableGutters sx={{ my: "auto", gap: "1.5%" }}>
           <Box>
             <img
-            src="/images/header/skillhubLogo2.jpeg"
-              // src="/images/header/skillhubLogo.png"
+            // src="/images/header/skillhubLogo2.jpeg"
+              src="/images/header/skillhubLogo.png"
               alt="Udemy"
               width="120"
-              height= "150"
+              height= "80"
             />
           </Box>
           <MenuButtom>
