@@ -1,4 +1,3 @@
-
 import "./Header.css";
 import Card from "./Card/Card";
 
@@ -7,20 +6,15 @@ const Header = () => {
     <div className="HeaderContainer">
       <img id="header-img" src="images/header/bggreen.jpg" alt="header img" />
       <div className="header-card-container">
-         <Card/>
+        <Card
+          heading="What's your dream?"
+          text="Log in now and learn the skills to help make it happen."
+          width ="40vw"
+          
+        />
       </div>
     </div>
-    // // <HeaderContainer>
-
-    // // <ImageBoxContainer>
-    // //   <ImageContainer src="images/header/bggreen.jpg" alt height={450} />
-    // //   <Card />
-    // // </ImageBoxContainer>
-    // // </HeaderContainer>
-    // <>
-    // </>
   );
 };
 
 export default Header;
-

@@ -1,3 +1,50 @@
+/* #popular-heading {
+  font-size: 2.5rem;
+
+  margin: 3;
+  margin-left: 2%;
+  margin-top: 3%;
+  font-weight: bold;
+}
+.slick-slider {
+  margin-bottom: -40px;
+  overflow-x: hidden;
+  overflow-y:hidden;
+}
+
+.slick-prev,
+.slick-next {
+  color: black;
+  font-size: 24px;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  overflow: visible !important;
+  
+  padding: 25px !important;
+  
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 100px;
+  line-height: 1;
+  color: black;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+} */
 #popular-heading {
   font-size: 2.5rem;
   /* padding: 29px; */
@@ -7,12 +54,37 @@
   font-weight: bold;
 }
 
+.slick-slider {
+  margin-bottom: -40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 /* PopularCourses.css */
 .slick-prev,
 .slick-next {
   color: black;
-  font-size: 24px;
+ 
+  /* font-size: 50%;  */
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    display: block;
+    width: 20px;
+    height: 28px;
+    
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    
+    filter: invert(1);
+ 
+    border: none;
+    outline: none;
+    background: transparent;
 }
+
 .slick-list {
   position: relative;
   display: block;
@@ -40,3 +112,9 @@
 .slick-next {
   right: 0;
 }
+
+.slick-dots {
+  display: block !important;
+  bottom: -30px;
+}
+

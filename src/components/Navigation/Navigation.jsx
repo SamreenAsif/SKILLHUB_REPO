@@ -133,9 +133,11 @@ const Navigation = (props) => {
               <div
                 className="LinkButton"
                 style={{
-                  "--height": "4rem",
-                  "--width": "8rem",
-                  "--font-size": "1.4rem",
+                  "--height": "6rem",
+                  "--width": "11rem",
+                  "--font-size": "1.8rem",
+                  "border-radius" : "8px",
+                  "border": "none",
                 }}
                 onClick={()=>Login()}
               >
@@ -144,9 +146,11 @@ const Navigation = (props) => {
               <div
                 className="LinkButton"
                 style={{
-                  "--height": "4rem",
-                  "--width": "8rem",
-                  "--font-size": "1.4rem",
+                  "--height": "6rem",
+                  "--width": "11rem",
+                  "--font-size": "1.8rem",
+                  "border-radius" : "8px",
+                  "border": "none",
                 }}
               >
                 Sign up
