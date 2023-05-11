@@ -5,16 +5,13 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { MoreVert } from "@material-ui/icons";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import MenuButtom from "../../share/UIElements/MenuButton/MenuButtom";
-import CartTooltip from "./CartTooltip/CartTooltip";
 import Categories from "./Categories/Categories";
 import SearchBar from "./SearchBar/SearchBar";
 
@@ -122,12 +119,14 @@ const Navigation = (props) => {
                 <FontAwesomeIcon icon={regularHeart} />
               </span>
 
-            
               <div>
-                <Avatar onMouseEnter={handleClick} onClick={handleClick}
-                 style={{
-                  "font-size" : "20px",
-                 }}>
+                <Avatar
+                  onMouseEnter={handleClick}
+                  onClick={handleClick}
+                  style={{
+                    "font-size": "20px",
+                  }}
+                >
                   H
                 </Avatar>
                 <Menu
@@ -135,36 +134,41 @@ const Navigation = (props) => {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
+                  <MenuItem
+                    style={{
+                      width: "18vh",
+                      "font-size": "1.5rem",
+                      "line-height": "1.5",
+                    }}
+                    onClick={()=>goToProfile()}
+                  >
+                    Profile
+                  </MenuItem>
+                  <MenuItem
+                    style={{
+                      width: "18vh",
+                      "font-size": "1.5rem",
+                      "line-height": "1.5",
+                    }}
+                    onClick = {()=>goToAccountSettings()}
+                   
+                  >
+                    My account
+                  </MenuItem>
+                  <MenuItem
+                    style={{
+                      width: "18vh",
+                      "font-size": "1.5rem",
+                      "line-height": "1.5",
+                    }}
+                    onClick={handleClose}
+                  >
+                    Logout
+                  </MenuItem>
                 </Menu>
               </div>
-              {/* <div>
-                <Button
-                  id="basic-button"
-                  aria-controls={open ? "basic-menu" : undefined}
-                  aria-haspopup="true"
-                  aria-expanded={open ? "true" : undefined}
-                  onClick={handleClick}
-                >
-                  Dashboard
-                </Button>
-                <Menu
-                  id="basic-menu"
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                  MenuListProps={{
-                    "aria-labelledby": "basic-button",
-                  }}
-                >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Menu>
-              </div> */}
-              <div
+              
+              {/* <div
                 className="LinkButton"
                 style={{
                   "--height": "4rem",
@@ -174,7 +178,7 @@ const Navigation = (props) => {
                 onClick={() => goToAccountSettings()}
               >
                 Account
-              </div>
+              </div> */}
             </>
           ) : (
             // render Log in and Sign up buttons if not logged in

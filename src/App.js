@@ -20,6 +20,9 @@ import Create3 from "./components/StudentSection/Create3";
 import Create4 from "./components/StudentSection/Create4";
 import Courses from "./components/StudentSection/Courses";
 import Aboutcourse from "./components/StudentSection/Aboutcourse";
+// const searchRouter = require("./routes/search");
+// app.use("/search", searchRouter);
+
 
 export const CartItemContext = createContext();
 

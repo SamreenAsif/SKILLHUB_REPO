@@ -1,4 +1,4 @@
-import { useState, useRef} from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -15,11 +15,20 @@ const SearchBar = () => {
       handleSearch();
     }
   };
-  const handleSearch = () => {
-    // alert("search clicked " + keyword.current.value);
-    navigate ("./SearchResult", { state: keyword.current.value });
-
+  const handleSearch = async () => {
+    try {
+      const response = await axios.get("/search", {
+        params: {
+          q: keyword.current.value,
+        },
+      });
+      setSearchResults(response.data);
+      navigate("./SearchResult");
+    } catch (error) {
+      console.error("Error searching for courses:", error);
+    }
   };
+
   return (
     <div
       style={{

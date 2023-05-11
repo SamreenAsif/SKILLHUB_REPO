@@ -56,33 +56,31 @@
 
 .slick-slider {
   margin-bottom: -40px;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 /* PopularCourses.css */
 .slick-prev,
 .slick-next {
   color: black;
- 
+
   /* font-size: 50%;  */
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    display: block;
-    width: 20px;
-    height: 28px;
-    
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    
-    filter: invert(1);
- 
-    border: none;
-    outline: none;
-    background: transparent;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  /* left: 95%; */
+  display: block;
+  width: 20px;
+  height: 28px;
+
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+
+  filter: invert(1);
+
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .slick-list {
@@ -106,15 +104,16 @@
 }
 
 .slick-prev {
-  left: 0;
+  /* left: 0; */
+  left: 4px;
 }
 
 .slick-next {
   right: 0;
+  left: 95%;
 }
 
 .slick-dots {
   display: block !important;
   bottom: -30px;
 }
-

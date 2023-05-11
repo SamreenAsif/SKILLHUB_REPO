@@ -1,4 +1,8 @@
 .profile-container{
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+  background: aliceblue;
   padding: 20px;
 }
 

@@ -1,25 +1,22 @@
-/* Global styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+
 #myAccountHead {
   color: #27599b;
   font-weight: bolder;
+  text-align: center;
+  padding: 2%;
 }
 /* Wrapper styles */
 #details-view-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
-  background-color: #27599b;
+
+  background-color: aliceblue;
 }
 
 /* Container styles */
 #details-view {
-  margin: 12px;
+  margin: 30px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px #112b4c;
@@ -31,9 +28,6 @@ body {
 #details-view-label {
   text-align: left;
   margin-bottom: 8px;
-}
-
-#details-view-label {
   font-size: 16px;
   font-weight: bold;
 }
