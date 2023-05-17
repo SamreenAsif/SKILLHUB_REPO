@@ -39,20 +39,38 @@ function App() {
   const updateLogInStatus = (status) => {
     setLoggedIn(status);
   };
-  const handleAddToCart = (course) => {
-    const isAlreadyInCart = coursesInCart.find((c) => c.id === course.id);
+  const handleAddToCart = async (course) => {
+    // const isAlreadyInCart = coursesInCart.find((c) => c.id === course.id);
 
-    if (!isAlreadyInCart) {
-      setCourseInCart([...coursesInCart, course]);
-    }
+    // if (!isAlreadyInCart) {
+    //   setCourseInCart([...coursesInCart, course]);
+    // }
+    const response = await fetch('/cart/add', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ courseId: course._id }),
+      credentials: 'include',
+    });
+
+    const data = await response.json();
+    alert (data.message );
   };
 
-  const handleAddToWishList = (course) => {
-    const isInWishList = coursesInWishList.find((c) => c.id === course.id);
+  const handleAddToWishList = async(course) => {
+    // const isInWishList = coursesInWishList.find((c) => c.id === course.id);
 
-    if (!isInWishList) {
-      setWishList([...coursesInWishList, course]);
-    }
+    // if (!isInWishList) {
+    //   setWishList([...coursesInWishList, course]);
+    // }
+    const response = await fetch('/favorites/add', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ courseId: course._id }),
+      credentials: 'include',
+    });
+
+    const data = await response.json();
+    alert (data.message );
   };
 
   const getAverageRating = (courseId) => {
@@ -101,15 +119,15 @@ function App() {
 
           <Route
             path="/yourcart"
-            element={<CartPage cartContent={coursesInCart} />}
+            element={<CartPage/>}
           />
 
           <Route
             path="/wishList"
             element={
               <FavoritesTab
-                wishListContent={coursesInWishList}
                 handleAddToCart={handleAddToCart}
+                getAverageRating={getAverageRating}
               />
             }
           />
@@ -118,8 +136,9 @@ function App() {
             path="/Learning/wishList"
             element={
               <FavoritesTab
-                wishListContent={coursesInWishList}
+                
                 handleAddToCart={handleAddToCart}
+                getAverageRating={getAverageRating}
               />
             }
           />
@@ -151,6 +170,8 @@ function App() {
         </Route>
         <Route path="/teaching/Create1/Create2/Create3/Create4/Aboutcourse" element={<Aboutcourse/>}>
         </Route>
+        <Route path="/teaching/Create1/Create2/Courses" element={<Courses />} />
+
       </Routes>
         <Footer />
       </CartItemContext.Provider>

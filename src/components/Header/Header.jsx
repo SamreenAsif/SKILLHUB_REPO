@@ -1,10 +1,12 @@
 import "./Header.css";
 import Card from "./Card/Card";
+import headerBanner from "../../images/header/bggreen.jpg";
 
 const Header = () => {
   return (
     <div className="HeaderContainer">
-      <img id="header-img" src="images/header/bggreen.jpg" alt="header img" />
+      
+      <img id="header-img" src={headerBanner} alt="header img" />
       <div className="header-card-container">
         <Card
           heading="What's your dream?"

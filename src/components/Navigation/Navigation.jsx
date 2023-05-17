@@ -14,6 +14,7 @@ import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import MenuButtom from "../../share/UIElements/MenuButton/MenuButtom";
 import Categories from "./Categories/Categories";
 import SearchBar from "./SearchBar/SearchBar";
+import logo from "../../images/header/skillhubLogo.png"
 
 import "../Btn.css";
 
@@ -76,7 +77,7 @@ const Navigation = (props) => {
           <Box>
             <img
               // src="/images/header/skillhubLogo2.jpeg"
-              src="/images/header/skillhubLogo.png"
+              src={logo}
               alt="Udemy"
               width="120"
               height="80"

@@ -10,12 +10,12 @@ function CartItem(props) {
     const starClass = i < props.rating ? 'fa fa-star checked' : 'fa fa-star';
     stars.push(<i key={i} className={starClass}></i>);
   }
- 
+  const imageUrl = `http://localhost:3000/uploads/${props.image}`;
   return (
     <div className="Item-box">
       <div className="item-flex-box">
         <div className="image">
-          <img src={props.image} alt="" />
+          <img src={imageUrl} alt="" />
         </div>
         <div className="Item-details">
           <div className="item-flex-1">

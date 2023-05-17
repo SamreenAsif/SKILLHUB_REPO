@@ -1,21 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FavoriteItem from "./FavoriteItems";
+import axios from "axios";
 const FavoritesTab = (props) => {
-  const [favItems, setfavItems] = useState(props.wishListContent);
-  const removeItem = (index) => {
-    setfavItems(favItems.filter((_, i) => i !== index));
+  const [favItems, setfavItems] = useState([]);
+
+  useEffect(() => {
+    fetchfavorites();
+  }, []);
+  const fetchfavorites = async () => {
+    try {
+      console.log("inside fav fetch data");
+      const response = await axios.get("/favorites");
+      const { wishListItems } = response.data;
+      
+      setfavItems(wishListItems);
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
+  };
+  const removeItem = async (itemId) => {
+    try {
+      alert(itemId) ;
+      await axios.delete(`/favorites/remove/${itemId}`);
+      fetchfavorites(); // Fetch updated cart data after removing the item
+      alert("Item removed from wishlist");
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
   };
   return (
     <>
       <div className="search-result-container">
-        {/* <div className="fav-content"> */}
-        {favItems.map((course, index) => (
+        
+        {favItems.map((course) => (
           <FavoriteItem
-            key={course.id}
+            key={course._id}
             result={course}
             handleAddToCart={props.handleAddToCart}
             handleAddToWishList={props.handleAddToWishList}
-            unFavorite={() => removeItem(index)}
+            unFavorite={() => removeItem(course._id)}
           />
         ))}
       </div>

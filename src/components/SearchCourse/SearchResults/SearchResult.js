@@ -1,5 +1,4 @@
 
-import { Star, StarHalf } from "@mui/icons-material";
 import "./courseCard.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +13,7 @@ function SearchResult(props) {
   const handleAddToCart = () => {
     setIsClicked(true);
     props.handleAddToCart(props.result);
+
   };
 
   const toggleHeartIcon = () => {
@@ -24,14 +24,14 @@ function SearchResult(props) {
       setHeartIcon(regularHeart);
     }
   };
-
+  const imageUrl = `http://localhost:3000/uploads/${props.result.imgUrl}`;
   return (
     <>
       {props.result && (
         <div className="course-container">
           <div key={props.result.title} className="search-card">
             <div className="course-img-wrapper">
-              <img src={props.result.imgUrl} alt="" className="course-img" />
+              <img src={imageUrl} alt="" className="course-img" />
               <button
                 className="hovered-button"
                 onClick={handleAddToCart}
@@ -53,9 +53,7 @@ function SearchResult(props) {
                 </div>
               </div>
             </div>
-            <div className="course-img-wrapper">
-              {/* <img src={item.img} alt={item.title} className="course-img" /> */}
-            </div>
+            
           </div>
         </div>
       )}

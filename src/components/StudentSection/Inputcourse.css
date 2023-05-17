@@ -1,11 +1,22 @@
-.addcourse
+.course-input-container{
+    width : 50% ;
+    margin : auto ;
+    margin-top: 2%;
+    margin-bottom : 2% ;
+    display : flex ;
+    flex-direction: column;
+    gap : 1% ;
+}
+.course-input-box-m1
 {
-    width:780px;
-    height:70px;
+    width: 680px;
+    height: 50px;
     font-size: 20px;
+    /* margin-left: 60px;*/
 }
 
-#count
+#count-span
 {
     font-size: 20px;
+    padding : 2% ;
 }
